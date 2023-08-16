@@ -19,9 +19,6 @@ st.set_page_config(page_title= "Phonepe Pulse Data Visualization",
 
 st.sidebar.header("**Hello! Welcome to the Phonepay dashboard**")
 
-# #To clone the Github Pulse repository use the following code
-# Reference Syntax - Repo.clone_from("Clone Url", "Your working directory")
-# Repo.clone_from("https://github.com/PhonePe/pulse.git", "Project_3_PhonepePulse/Phonepe_data/data")
 
 # Creating connection with mysql workbench
 mydb = sql.connect(host="localhost",
