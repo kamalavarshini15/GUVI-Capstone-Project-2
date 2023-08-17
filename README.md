@@ -23,7 +23,7 @@ Sample Code :
 path1 = "C:/Users/Kamalavarshini/Desktop/pulse/data/aggregated/transaction/country/india/state/"  _(Note! - the path from where data can be accessed might be local or  cloud server, but using local is preferable if you are using mysql as it uses local system)_
 Agg_trans_list=os.listdir(path1)
 
-
+```
 clm_a1={'State':[], 'Year':[],'Quater':[],'Transacion_type':[], 'Transacion_count':[], 'Transacion_amount':[]}
 for state in Agg_trans_list:
     p_state=path1+state+"/"
@@ -47,6 +47,8 @@ for state in Agg_trans_list:
               clm_a1['Quater'].append(int(file.strip('.json')))
 #Succesfully created a dataframe
 Agg_Trans=pd.DataFrame(clm_a1)
+
+```
 
 
 4) Connecting to Mysql Server
