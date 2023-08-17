@@ -14,7 +14,7 @@ from streamlit_option_menu import option_menu
 2) **Cloning git hub data**
    Code - !git clone https://github.com/PhonePe/pulse.git (for jupyter notebook)  _Note! - Cloning github may vary for different environments_
 
-3)**Data transformation**
+3) **Data transformation**
    Data present in json format is converted to Dataframe for user usability, and the data is retrieved by iterating through loops. Then the data frame is converted 
    to CSV. Packages like json , os and pandas were imported .
 
@@ -68,4 +68,12 @@ Agg_Trans=pd.DataFrame(clm_a1)
 The above code is used for connecting to Mysql, then the query is written to store the data in form of table .
 
 5) **Creating Dashboard** 
+
+Plotly libraries in Python is used to create an interactive and visually appealing dashboard. Plotly's built-in geo map functions is used to display the data on a map and Streamlit is used to create a user-friendly interface with multiple dropdown options for users to select different facts and figures to display.
+
+
+
+![image](https://github.com/kamalavarshini15/GUVI-Capstone-Project-2/assets/119718578/ffcd6bc8-63c3-4ebf-b71e-d577212aaf4d)
+![image](https://github.com/kamalavarshini15/GUVI-Capstone-Project-2/assets/119718578/3c599eac-bcd8-4d10-bbf8-6d98912f407f)
+
 
