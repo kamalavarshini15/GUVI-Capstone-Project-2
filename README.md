@@ -1,7 +1,7 @@
 # GUVI-Capstone-Project-2
 
 **WORKFLOW**
-1) importing necessary libraries
+1) **importing necessary libraries**
 
 import pandas as pd
 import mysql.connector as sql
@@ -11,17 +11,19 @@ import os
 import json
 from streamlit_option_menu import option_menu
 
-2) Cloning git hub data
+2) **Cloning git hub data**
    Code - !git clone https://github.com/PhonePe/pulse.git (for jupyter notebook)  _Note! - Cloning github may vary for different environments_
 
-3) Data transformation
+3)**Data transformation**
    Data present in json format is converted to Dataframe for user usability, and the data is retrieved by iterating through loops. Then the data frame is converted 
    to CSV. Packages like json , os and pandas were imported .
 
 Sample Code :
 
+```
 path1 = "C:/Users/Kamalavarshini/Desktop/pulse/data/aggregated/transaction/country/india/state/"  _(Note! - the path from where data can be accessed might be local or  cloud server, but using local is preferable if you are using mysql as it uses local system)_
 Agg_trans_list=os.listdir(path1)
+```
 
 ```
 clm_a1={'State':[], 'Year':[],'Quater':[],'Transacion_type':[], 'Transacion_count':[], 'Transacion_amount':[]}
@@ -51,7 +53,9 @@ Agg_Trans=pd.DataFrame(clm_a1)
 ```
 
 
-4) Connecting to Mysql Server
+4) **Connecting to Mysql Server**
+
+```
    mydb = sql.connect(host="localhost",
                    user="root",
                    password="    ",(Type your password)
@@ -59,8 +63,9 @@ Agg_Trans=pd.DataFrame(clm_a1)
                   )
    mycursor = mydb.cursor(buffered=True)
 
+```
+  
+The above code is used for connecting to Mysql, then the query is written to store the data in form of table .
 
-   The above code is used for connecting to Mysql, then the query is written to store the data in form of table .
-
-5) Creating Dashboard 
+5) **Creating Dashboard** 
 
