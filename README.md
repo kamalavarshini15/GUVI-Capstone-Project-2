@@ -64,6 +64,9 @@ Agg_Trans=pd.DataFrame(clm_a1)
    mycursor = mydb.cursor(buffered=True)
 
 ```
+
+![image](https://github.com/kamalavarshini15/GUVI-Capstone-Project-2/assets/119718578/28edbae1-ce57-4086-8ecf-d31e82d7a829)
+
   
 The above code is used for connecting to Mysql, then the query is written to store the data in form of table .
 
